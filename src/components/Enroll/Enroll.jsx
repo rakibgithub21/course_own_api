@@ -6,10 +6,11 @@ const Enroll = ({ courseCart,deleteButton }) => {
     return (
         <div>
             
-                {
-                    courseCart.map((cart,id) => <Cart
-                        cart={cart}
-                        key={id}
+            {
+                courseCart.map((cart, index) => <Cart
+                    cart={cart}
+                    key={index}
+                    index={index}
                         deleteButton={deleteButton}
                         
                     ></Cart>)
