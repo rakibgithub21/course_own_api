@@ -13,6 +13,8 @@ const Cart = ({ cart, deleteButton,index }) => {
 };
 Cart.propTypes = {
     cart: PropTypes.object,
+    deleteButton: PropTypes.func,
+    index: PropTypes.number,
 
 };
 

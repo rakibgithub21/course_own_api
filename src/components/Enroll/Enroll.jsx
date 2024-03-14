@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import Cart from "../../Cart/Cart";
 
 const Enroll = ({ courseCart,deleteButton }) => {
-    console.log(courseCart);
     return (
         <div>
             
@@ -21,6 +20,7 @@ const Enroll = ({ courseCart,deleteButton }) => {
 };
 Enroll.propTypes = {
     courseCart: PropTypes.array,
+    deleteButton: PropTypes.func,
     
 };
 

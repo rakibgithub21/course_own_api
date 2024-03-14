@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const Money = ({ courseCart }) => {
     let total = 0;
@@ -10,6 +10,11 @@ const Money = ({ courseCart }) => {
             <h3 className="text-2xl font-semibold">Total Money:{total}</h3>
         </div>
     );
+};
+Money.propTypes = {
+    courseCart: PropTypes.array,
+
+
 };
 
 export default Money;
