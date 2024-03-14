@@ -30,11 +30,11 @@ const Course = ({ course, addToShoopingCart }) => {
                 <div className='flex gap-3 items-center'>
                     <img className='w-14 h-14 object-cover rounded-full' src={instructor.image} alt="" />
                     <div>
-                        <h3 className='text-2xl font-bold '>{instructor.name}</h3>
-                        <p className='font-medium'>{instructor.profession}</p>
+                        <h3 className='lg:text-2xl md:text-xl lg:font-bold md:font-medium'>{instructor.name}</h3>
+                        <p className='md:font-medium '>{instructor.profession}</p>
                     </div>
                 </div>
-                <div className='flex gap-2 text-2xl font-medium items-center'>
+                <div className='flex gap-2 lg:text-2xl md:text-xl md:font-medium items-center'>
                     <h3>{duration}Month</h3>
                     <div>
                         <button onClick={() => addToShoopingCart(course)} className='bg-lime-500 p-2 rounded-full text-gray-700'><BsCartCheck /></button>
@@ -43,21 +43,21 @@ const Course = ({ course, addToShoopingCart }) => {
             </div>
 
             <div className='space-y-1'>
-                <h3 className='text-3xl font-bold '>{course_name}</h3>
-                <h1 className='font-medium text-xl '>{description}</h1>
+                <h3 className='lg:text-3xl md:text-2xl font-semibold lg:font-bold '>{course_name}</h3>
+                <h1 className='md:font-medium text-xl  '>{description}</h1>
             </div>
-            <div className='flex justify-between font-medium text-lg'>
-                <div className='flex gap-2 items-center'>
+            <div className='flex justify-between md:font-medium md:text-lg mt-3 md:mt-0 flex-col md:flex-row'>
+                <div className='flex gap-2 items-center flex-col md:flex-row text-center md:text-start'>
                     <p className='text-pink-700'><GrSchedule /></p>
                     <h3>{schedule}</h3>
                 </div>
-                <div className='flex gap-3'>
+                <div className='flex gap-3 justify-center md:justify-normal'>
                     <p>{location.name}</p>
                     <p>Room: {location.room_number}</p>
                 </div>
             </div>
 
-            <div className='flex justify-between mt-3'>
+            <div className='flex justify-between mt-3 flex-col md:flex-row' >
                 <div className='flex gap-5 font-medium text-lg'>
                     <p>Price: {price} ৳</p>
                     <p>Review :{p}</p>
@@ -67,7 +67,7 @@ const Course = ({ course, addToShoopingCart }) => {
                     <span>Total Seat : {total_enrollment}</span>
                 </div>
             </div>
-            
+
 
         </div>
     );

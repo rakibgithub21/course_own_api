@@ -31,17 +31,17 @@ const Container = () => {
     }, [courses])
 
     // button handler:
-    const [courseCart,setCourseCart] = useState([])
+    const [courseCart, setCourseCart] = useState([])
     const addToShoopingCart = (course) => {
         const mathced = courseCart.find(cart => cart.course_id === course.course_id);
-        
+
         if (mathced) {
             alert('you already select this')
         } else {
             const newCart = [...courseCart, course];
             setCourseCart(newCart);
             addToLS(course.course_id)
-            
+
         }
     }
     // console.log(courseCart);
@@ -55,15 +55,15 @@ const Container = () => {
     }
 
     return (
-        <div className="container mx-auto flex my-5 gap-5">
-            <div className="w-2/3">
+        <div className="container mx-auto flex flex-col-reverse md:flex-row my-5 gap-5">
+            <div className="md:w-2/3">
                 {courses.map(course => <Course
                     key={course.course_id}
                     course={course}
                     addToShoopingCart={addToShoopingCart}
                 ></Course>)}
             </div>
-            <div className="w-1/3 bg-slate-200 p-2 rounded-lg h-[500px] sticky top-0 overflow-auto">
+            <div className="md:w-1/3 bg-slate-200 p-2 rounded-lg h-64  md:h-[500px] md:sticky top-0 overflow-auto">
                 <Money courseCart={courseCart}></Money>
                 <Enroll courseCart={courseCart} deleteButton={deleteButton}></Enroll>
             </div>
