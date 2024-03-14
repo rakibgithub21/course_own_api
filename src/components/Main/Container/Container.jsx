@@ -29,6 +29,13 @@ const Container = () => {
     }
     // console.log(courseCart);
 
+    const deleteButton = id => {
+        // console.log(id);
+        const remaining = courseCart.filter(cart => cart.course_id !== id);
+        setCourseCart(remaining)
+
+    }
+
     return (
         <div className="container mx-auto flex my-5 gap-5">
             <div className="w-2/3">
@@ -40,7 +47,7 @@ const Container = () => {
             </div>
             <div className="w-1/3 bg-slate-200 p-2 rounded-lg h-[500px] sticky top-0 overflow-auto">
                 <Money courseCart={courseCart}></Money>
-                <Enroll courseCart={courseCart}></Enroll>
+                <Enroll courseCart={courseCart} deleteButton={deleteButton}></Enroll>
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Cart from "../../Cart/Cart";
 
-const Enroll = ({ courseCart }) => {
+const Enroll = ({ courseCart,deleteButton }) => {
     console.log(courseCart);
     return (
         <div>
@@ -10,6 +10,7 @@ const Enroll = ({ courseCart }) => {
                     courseCart.map((cart,id) => <Cart
                         cart={cart}
                         key={id}
+                        deleteButton={deleteButton}
                         
                     ></Cart>)
                 }
