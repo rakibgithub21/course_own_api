@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Course from "../Course/Course";
 import Money from "../../Money/Money";
 import Enroll from "../../Enroll/Enroll";
+import { addToLS, getStoredCart, removeFromLS } from "../../../utilities/utilities";
 
 
 const Container = () => {
@@ -15,6 +16,20 @@ const Container = () => {
 
     }, [])
 
+
+    useEffect(() => {
+        if (courses.length) {
+            const storedCart = getStoredCart()
+            let savedArray = []
+            for (const id of storedCart) {
+                const search = courses.find(course => course.course_id === id);
+                savedArray.push(search)
+                // console.log(search);
+            }
+            setCourseCart(savedArray)
+        }
+    }, [courses])
+
     // button handler:
     const [courseCart,setCourseCart] = useState([])
     const addToShoopingCart = (course) => {
@@ -24,7 +39,9 @@ const Container = () => {
             alert('you already select this')
         } else {
             const newCart = [...courseCart, course];
-            setCourseCart(newCart)
+            setCourseCart(newCart);
+            addToLS(course.course_id)
+            
         }
     }
     // console.log(courseCart);
@@ -32,7 +49,8 @@ const Container = () => {
     const deleteButton = id => {
         // console.log(id);
         const remaining = courseCart.filter(cart => cart.course_id !== id);
-        setCourseCart(remaining)
+        setCourseCart(remaining);
+        removeFromLS(id)
 
     }
 
