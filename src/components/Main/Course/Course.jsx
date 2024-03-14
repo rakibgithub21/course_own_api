@@ -46,7 +46,7 @@ const Course = ({ course }) => {
                 <h3 className='text-3xl font-bold '>{course_name}</h3>
                 <h1 className='font-medium text-xl '>{description}</h1>
             </div>
-            <div>
+            <div className='flex justify-between font-medium text-lg'>
                 <div className='flex gap-2 items-center'>
                     <p className='text-pink-700'><GrSchedule /></p>
                     <h3>{schedule}</h3>

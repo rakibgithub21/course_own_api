@@ -14,7 +14,7 @@
       "room_number": "101"
     },
     "price": 150,
-    "image": "https://i.ibb.co/5hPQZPT/introtoprogramming-190909184629-thumbnail-4-pbpc20iod8v7fuxew94z0u8rmumjgcq04xsmg493xs.jpg",
+    "image": "https://i.ibb.co/PjWQWTn/Untitled-design-2.png",
     "ratings": 4.5,
     "total_enrollment": 120,
     "duration": 12
@@ -26,7 +26,7 @@
     "instructor": {
       "name": "Prof. Johnson",
       "profession": "Computer Scientist",
-      "image": "https://i.ibb.co/3vKHXcN/a37be5b9709175f1527761157463ec38.jpg"
+      "image": "https://i.ibb.co/YjXwp3m/jhonson.webp"
     },
     "schedule": "Tuesday, Thursday 11:00 AM - 12:30 PM",
     "location": {
@@ -46,7 +46,7 @@
     "instructor": {
       "name": "Dr. Lee",
       "profession": "Web Developer",
-      "image": "https://i.ibb.co/1Rr6q9D/FMS-Abdal-exported.jpg"
+      "image": "https://i.ibb.co/j6sVvZs/d-lee.jpg"
     },
     "schedule": "Monday, Wednesday 1:00 PM - 2:30 PM",
     "location": {
@@ -66,7 +66,7 @@
     "instructor": {
       "name": "Prof. Davis",
       "profession": "Data Scientist",
-      "image": "https://i.ibb.co/mhghvLb/photo-document-passport-id-mature-caucasian-man-suit-262388-3596.jpg"
+      "image": "https://i.ibb.co/r7xrK6j/p-davis.jpg"
     },
     "schedule": "Tuesday, Thursday 9:00 AM - 10:30 AM",
     "location": {
@@ -106,7 +106,7 @@
     "instructor": {
       "name": "Prof. Martinez",
       "profession": "Database Administrator",
-      "image": "https://i.ibb.co/M5tZ9jQ/93f40ec756290812571be534e12bcfe7.jpg"
+      "image": "https://i.ibb.co/PYDcvns/p-martinez.jpg"
     },
     "schedule": "Tuesday, Thursday 1:00 PM - 2:30 PM",
     "location": {
