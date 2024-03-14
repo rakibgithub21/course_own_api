@@ -4,7 +4,7 @@ import { MdOutlineEventSeat } from "react-icons/md";
 import { GrSchedule } from "react-icons/gr";
 
 
-const Course = ({ course }) => {
+const Course = ({ course, addToShoopingCart }) => {
     const { course_name,
         description,
         instructor,
@@ -37,7 +37,7 @@ const Course = ({ course }) => {
                 <div className='flex gap-2 text-2xl font-medium items-center'>
                     <h3>{duration}Month</h3>
                     <div>
-                        <button className='bg-lime-500 p-2 rounded-full text-gray-700'><BsCartCheck /></button>
+                        <button onClick={() => addToShoopingCart(course)} className='bg-lime-500 p-2 rounded-full text-gray-700'><BsCartCheck /></button>
                     </div>
                 </div>
             </div>
@@ -74,5 +74,6 @@ const Course = ({ course }) => {
 };
 Course.propTypes = {
     course: PropTypes.object,
+    addToShoopingCart: PropTypes.func,
 };
 export default Course;
