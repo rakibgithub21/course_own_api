@@ -1,0 +1,122 @@
+[
+  {
+    "course_id": 1,
+    "course_name": "Introduction to Programming",
+    "description": "This course introduces the fundamental concepts of programming using a high-level language.",
+    "instructor": {
+      "name": "Dr. Smith",
+      "profession": "Computer Scientist",
+      "image": "https://i.ibb.co/F82wcLV/360-F-373522464-Uzk-M3-Ivqgqp-S0q-Iy2kpk-B5-Qi-V7-Bw7-Ny-S.jpg"
+    },
+    "schedule": "Monday, Wednesday, Friday 9:00 AM - 10:30 AM",
+    "location": {
+      "name": "Computer Science Building",
+      "room_number": "101"
+    },
+    "price": 150,
+    "image": "https://i.ibb.co/5hPQZPT/introtoprogramming-190909184629-thumbnail-4-pbpc20iod8v7fuxew94z0u8rmumjgcq04xsmg493xs.jpg",
+    "ratings": 4.5,
+    "total_enrollment": 120,
+    "duration": 12
+  },
+  {
+    "course_id": 2,
+    "course_name": "Data Structures and Algorithms",
+    "description": "This course covers fundamental data structures and algorithms used in computer science.",
+    "instructor": {
+      "name": "Prof. Johnson",
+      "profession": "Computer Scientist",
+      "image": "https://i.ibb.co/3vKHXcN/a37be5b9709175f1527761157463ec38.jpg"
+    },
+    "schedule": "Tuesday, Thursday 11:00 AM - 12:30 PM",
+    "location": {
+      "name": "Engineering Building",
+      "room_number": "201"
+    },
+    "price": 200,
+    "image": "https://i.ibb.co/cXDJW91/datastructure.jpg",
+    "ratings": 4.8,
+    "total_enrollment": 90,
+    "duration": 10
+  },
+  {
+    "course_id": 3,
+    "course_name": "Web Development Fundamentals",
+    "description": "This course provides an introduction to web development technologies and practices.",
+    "instructor": {
+      "name": "Dr. Lee",
+      "profession": "Web Developer",
+      "image": "https://i.ibb.co/1Rr6q9D/FMS-Abdal-exported.jpg"
+    },
+    "schedule": "Monday, Wednesday 1:00 PM - 2:30 PM",
+    "location": {
+      "name": "Technology Center",
+      "room_number": "301"
+    },
+    "price": 180,
+    "image": "https://i.ibb.co/L8QL2qh/Mastering-Web-Development-Fundamentals.jpg",
+    "ratings": 4.3,
+    "total_enrollment": 100,
+    "duration": 8
+  },
+  {
+    "course_id": 4,
+    "course_name": "Machine Learning Basics",
+    "description": "This course introduces basic concepts and techniques in machine learning.",
+    "instructor": {
+      "name": "Prof. Davis",
+      "profession": "Data Scientist",
+      "image": "https://i.ibb.co/mhghvLb/photo-document-passport-id-mature-caucasian-man-suit-262388-3596.jpg"
+    },
+    "schedule": "Tuesday, Thursday 9:00 AM - 10:30 AM",
+    "location": {
+      "name": "Science Building",
+      "room_number": "102"
+    },
+    "price": 160,
+    "image": "https://i.ibb.co/8gXTnzR/machine-learning-banner-artificial-intelligence-107791-611.jpg",
+    "ratings": 4.6,
+    "total_enrollment": 80,
+    "duration": 10
+  },
+  {
+    "course_id": 5,
+    "course_name": "Cybersecurity Fundamentals",
+    "description": "This course covers essential concepts and practices in cybersecurity.",
+    "instructor": {
+      "name": "Dr. Wilson",
+      "profession": "Cybersecurity Expert",
+      "image": "https://i.ibb.co/khZfbLF/360-F-378432516-6-Il-Ki-CLDAq-SCGcfc6o8-Vq-Wh-ND51-Xqf-Fm.jpg"
+    },
+    "schedule": "Monday, Wednesday 11:00 AM - 12:30 PM",
+    "location": {
+      "name": "Security Center",
+      "room_number": "202"
+    },
+    "price": 170,
+    "image": "https://i.ibb.co/wN33PQP/350bs-Blog-Banner6.webp",
+    "ratings": 4.7,
+    "total_enrollment": 110,
+    "duration": 10
+  },
+  {
+    "course_id": 6,
+    "course_name": "Advanced Database Management",
+    "description": "This course delves into advanced topics in database management systems.",
+    "instructor": {
+      "name": "Prof. Martinez",
+      "profession": "Database Administrator",
+      "image": "https://i.ibb.co/M5tZ9jQ/93f40ec756290812571be534e12bcfe7.jpg"
+    },
+    "schedule": "Tuesday, Thursday 1:00 PM - 2:30 PM",
+    "location": {
+      "name": "Computer Science Building",
+      "room_number": "302"
+    },
+    "price": 190,
+    "image": "https://i.ibb.co/GvqTXgq/0-vv3n-K-47x-TZJzwz1.jpg",
+    "ratings": 4.9,
+    "total_enrollment": 70,
+    "duration": 8
+  }
+]
